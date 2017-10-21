@@ -1,16 +1,25 @@
-console.log("działa!");
-var myName = 'Agnieszka';
-console.log('myName', myName);
-var friends = ['Basia', 'Ania', 'Asia'];
-console.log(friends[1]);
-friends[0] = "Ala";
-console.log(friends);
-var a = 27;
-var b = 15;
-if (a > b) {
-console.log("hurra!");
-};
+'use strict';
 
-for (var i=0; i<=friends.length-1;i++){
-console.log(friends[i]);
-};
+document.addEventListener('DOMContentLoaded', function() {
+      // tutaj będziemy umieszczać kod ze wszystkich zadań
+    var elementWithDropdown = document.querySelector('.for-dropdown');
+    
+    console.log(elementWithDropdown);
+    
+    var dropdown = document.querySelector('.dropdown');
+    
+    console.log(dropdown);
+    
+    elementWithDropdown/addEventListener('mouseover', function() {
+        console.log('myszka jest tu');
+        
+        dropdown.style.display = "block";
+    });
+    
+    elementWithDropdown/addEventListener('mouseout', function() {
+        
+        dropdown.style.display = "none";
+    });
+    
+    });
+
